@@ -3,8 +3,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
 logging.basicConfig(level=logging.INFO)
-TELEGRAM_TOKEN = os.getenv("7748771202:AAEVPCbnYwopGTtUbUeI_CDggNUHhS67ypg")
-OPENROUTER_API_KEY = os.getenv("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")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 MODEL = "openchat/openchat-3.5"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
